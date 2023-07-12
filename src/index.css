@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+#root{
+    background-color: rgba(168, 255, 81, 0.87);
+    min-height: 100vh;
+}

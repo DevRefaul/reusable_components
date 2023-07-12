@@ -22,15 +22,13 @@ const Tabs = () => {
           </li>
         ))}
       </ul>
-      <div className={activeTab === "Home" ? "active" : ""}>
-        This is the home tab content
-      </div>
-      <div className={activeTab === "About" ? "active" : ""}>
-        This is the about tab content
-      </div>
-      <div className={activeTab === "Contact" ? "active" : ""}>
-        This is the contact tab content
-      </div>
+      {activeTab === "Home" ? <div>This is the home tab content</div> : <></>}
+      {activeTab === "About" ? <div>This is the About tab content</div> : <></>}
+      {activeTab === "Contact" ? (
+        <div>This is the Contact tab content</div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
