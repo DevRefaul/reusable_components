@@ -4,6 +4,7 @@ const Tabs = () => {
   const [activeTab, setActiveTab] = useState("Home");
   const tabs = [
     { label: "Home", content: "This is the home tab" },
+    { label: "Products", content: "This is the products tab" },
     { label: "About", content: "This is the about tab" },
     { label: "Contact", content: "This is the contact tab" },
   ];
@@ -23,6 +24,11 @@ const Tabs = () => {
         ))}
       </ul>
       {activeTab === "Home" ? <div>This is the home tab content</div> : <></>}
+      {activeTab === "Products" ? (
+        <div>This is the home products content</div>
+      ) : (
+        <></>
+      )}
       {activeTab === "About" ? <div>This is the About tab content</div> : <></>}
       {activeTab === "Contact" ? (
         <div>This is the Contact tab content</div>
