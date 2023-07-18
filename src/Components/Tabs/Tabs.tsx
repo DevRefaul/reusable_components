@@ -1,8 +1,14 @@
 import { useState } from 'react';
 
+interface Tab {
+  label: string;
+  content: string;
+}
+
+
 const Tabs = () => {
   const [activeTab = String, setActiveTab] = useState<String>("Home")
-  const tabs = [
+  const tabs:Tab[] = [
     { label: "Home", content: "This is the home tab" },
     { label: "Products", content: "This is the products tab" },
     { label: "About", content: "This is the about tab" },
