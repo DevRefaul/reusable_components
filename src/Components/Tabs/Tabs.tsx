@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const Tabs = () => {
-  const [activeTab, setActiveTab] = useState("Home");
+  const [activeTab = String, setActiveTab] = useState("Home")
   const tabs = [
     { label: "Home", content: "This is the home tab" },
     { label: "Products", content: "This is the products tab" },
